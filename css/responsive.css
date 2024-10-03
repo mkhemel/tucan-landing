@@ -1,0 +1,417 @@
+@media (max-width: 1799.98px) {
+
+    .footer-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .home-content-wrapper{
+        margin-top: 0px;
+    }
+
+    .home-content-logo{
+        width: 130px;
+    }
+
+    .home-header-title{
+        font-size: 38px;
+    }
+
+    .home-header-desc{
+        font-size: 18px;
+    }
+
+    .btn.btn-primary{
+        background-color: var(--primary-color);
+        font-size: 30px;
+    }
+
+    .welcome-card{
+        padding: 50px;
+    }
+
+    .welcome-card-title,
+    .home-access-title{
+        font-size: 50px;
+    }
+
+    .privacy-access-title{
+        font-size: 25px;
+    }
+
+    .welcome-card-desc,
+    .home-access-desc{
+        font-size: 18px;
+    }
+
+    .welcome-card-desc:last-child{
+        margin-bottom: 80px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+    .feature-text,
+    .platform-single-desc{
+        font-size: 25px;
+    }
+
+
+
+}
+
+@media (max-width: 1199.98px) {
+    .home-header-title{
+        font-size: 35px;
+        max-width: 900px;
+    }
+
+    .home-header-desc{
+        font-size: 18px;
+        max-width: 700px;
+    }
+
+    .btn.btn-primary{
+        background-color: var(--primary-color);
+        font-size:27px;
+    }
+
+    .home-content-wrapper{
+        margin-top: 30px;
+    }
+
+    .welcome-card{
+        padding: 50px;
+    }
+
+    .welcome-card-title,
+    .home-access-title{
+        font-size: 47px;
+    }
+
+    .privacy-access-title{
+        font-size: 22px;
+    }
+
+    .welcome-card-desc,
+    .home-access-desc{
+        font-size: 17px;
+    }
+
+    .welcome-card-desc:last-child{
+        margin-bottom: 70px;
+    }
+
+    .footer-menu-wrap{
+        justify-content: center;
+    }
+
+    .contact-subtitle{
+        font-size: 30px;
+    }
+    .feature-text,
+    .platform-single-desc{
+        font-size: 22px;
+    }
+
+
+    .platform-single-title{
+        font-size: 32px;
+    }
+
+
+
+}
+
+@media (max-width: 991.98px) {
+    .home-header-title{
+        font-size: 32px;
+        max-width: 700px;
+    }
+
+    .home-header-desc{
+        font-size: 17px;
+        max-width: 600px;
+    }
+
+    .btn.btn-primary{
+        background-color: var(--primary-color);
+        font-size:25px;
+    }
+    .home-content-logo{
+        width: 120px;
+    }
+
+    .welcome-card{
+        padding: 50px;
+    }
+
+    .welcome-card-title,
+    .home-access-title{
+        font-size: 47px;
+    }
+
+    .privacy-access-title{
+        font-size: 22px;
+    }
+
+    .welcome-card-desc,
+    .home-access-desc{
+        font-size: 17px;
+    }
+
+    .welcome-card-desc:last-child{
+        margin-bottom: 70px;
+    }
+
+    .short-mv-subtitle{
+        font-size: 25px;
+    }
+    .navbar-cs .nav-item .nav-link {
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .contact-subtitle{
+        font-size: 28px;
+    }
+
+    .platform-single-title{
+        font-size: 30px;
+    }
+
+    .feature-01::before,
+    .feature-02::before,
+    .feature-03::before,
+    .feature-04::before,
+    .feature-05::before{
+        width: 50px;
+        height: 50px;
+        top: -7px;
+        right: -7px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .navbar-cs .navbar-brand img{
+        height: 60px;
+        width: 209px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome-card-title, .home-access-title {
+        font-size: 30px;
+    }
+    .welcome-card-desc, .home-access-desc {
+        font-size: 16px;
+    }
+
+    .short-mv-subtitle{
+        font-size: 22px;
+    }
+
+    .home-content-logo{
+        width: 120px;
+    }
+    .home-header-title{
+        font-size: 30px;
+    }
+
+    .home-header-desc{
+        font-size: 16px;
+    }
+
+    .btn.btn-primary{
+        background-color: var(--primary-color);
+        font-size:22px;
+    }
+
+    .home-footer-main-text{
+        font-size: 28px;
+    }
+
+    .core-image-wrapper{
+        padding: 30px;
+    }
+
+    .top-right-corner,
+    .bottom-left-corner,
+    .bottom-right-corner,
+    .top-left-corner{
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-subtitle{
+        font-size: 25px;
+    }
+
+    .feature-text,
+    .platform-single-desc{
+        font-size: 20px;
+    }
+    .platform-single-title{
+        font-size: 25px;
+    }
+
+    .home-header{
+        height: unset !important;
+    }
+
+    .right-blur-effect,
+    .left-blur-effect{
+        display: none;
+    }
+
+    .short-move-card-inner{
+        padding: 70px 30px;
+
+    }
+
+    .privacy-access-title{
+        font-size: 20px;
+    }
+    .btn.btn-primary{
+        font-size:16px;
+        padding: 10px 15px;
+    }
+    .footer-text{
+        font-size: 13px;
+    }
+    .platform-single-card{
+        padding: 20px;
+    }
+
+    .modal-form-title{
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .home-content-wrapper{
+        margin-top: 0px;
+    }
+
+    .welcome-card{
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .navbar-cs .navbar-brand img{
+        height: 50px;
+        width: 174px;
+    }
+    .section{
+        padding: 40px 0;
+    }
+
+    .home-footer-btn{
+        margin-bottom: 50px;
+    }
+
+    .form-control, .form-select{
+        font-size: 14px;
+    }
+
+
+    .modal-form-title{
+        font-size: 20px;
+    }
+
+    .home-content-logo{
+        width: 100px;
+    }
+
+    .home-header-title{
+        font-size: 22px;
+    }
+
+    .home-header-desc{
+        font-size: 12px;
+    }
+
+    .platform-image-div h3{
+        font-size: 18px;
+    }
+
+    .platform-image-div{
+        width: 70%;
+    }
+
+    .btn.btn-primary{
+        font-size:13px;
+        padding: 10px 15px;
+    }
+
+    .short-move-card-inner{
+        padding: 50px 25px;
+
+    }
+
+    .welcome-card-title,
+    .home-access-title{
+        font-size: 22px;
+    }
+
+    .privacy-access-title{
+        font-size: 16px;
+    }
+
+    .welcome-card-desc,
+    .home-access-desc{
+        font-size: 12px;
+    }
+
+    .welcome-card-desc:last-child{
+        margin-bottom: 50px;
+    }
+
+    .short-mv-subtitle{
+        font-size: 20px;
+    }
+
+    .contact-subtitle{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .contact-submit-btn,
+    .feature-end-card{
+        padding-bottom: 40px;
+    }
+    .feature-text,
+    .platform-single-desc{
+        font-size: 14px;
+    }
+
+    .platform-single-title{
+        font-size: 17px;
+    }
+
+    .platform-single-card:last-child{
+        margin-bottom: 40px;
+    }
+
+    .home-footer-main-text{
+        font-size: 20px;
+    }
+    .footer-text{
+        font-size: 12px;
+    }
+
+    .top-right-corner,
+    .bottom-left-corner,
+    .bottom-right-corner,
+    .top-left-corner{
+        width: 40px;
+        height: 40px;
+    }
+
+
+}
+
+
+
