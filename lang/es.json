@@ -1,0 +1,379 @@
+{
+    "website": "Tucan",
+    "url": "https://tucan.online/",
+    "language": "spanish",
+    "menu": {
+        "menu_1": {
+            "text": "Plataforma",
+            "after_click": {
+                "url": "https://tucan.online/platform.html",
+                "main_title": "Plataforma TUCAN",
+                "sub_title": "Aproveche TUCAN para lograr una vigilancia digital inigualable, seguridad nacional y capacidades de inteligencia exclusivas",
+                "feature_1": {
+                    "title": "Vigilancia en todos los ámbitos digitales",
+                    "description": "TUCAN ofrece una amplia cobertura de redes sociales, mensajería instantánea, darknet, foros y más, brindando una visibilidad incomparable en entornos digitales y garantizando sólidos recursos de vigilancia y análisis"
+                },
+                "feature_2": {
+                    "title": "Especializado en seguridad nacional",
+                    "description": "Diseñado para satisfacer las rigurosas demandas de las agencias de inteligencia y de aplicación de la ley, Tucan ofrece capacidades de monitoreo en una amplia gama de fuentes"
+                },
+                "feature_3": {
+                    "title": "Funciones de inteligencia exclusivas",
+                    "description": "Rastrea y analiza huellas digitales con inteligencia artificial avanzada, análisis de imágenes y reconocimiento facial. Nuestros algoritmos revelan redes ocultas, mientras monitorean foros y la red oscura para obtener información detallada sobre las actividades de los usuarios"
+                }
+            }
+        },
+        "menu_2": {
+            "text": "Características principales",
+            "after_click": {
+                "url": "https://tucan.online/key-feature.html",
+                "main_title": "Características principales",
+                "sub_title": "Aproveche todo el potencial de las capacidades de IA y los algoritmos sofisticados para monitorear y analizar las comunicaciones a través de redes digitales",
+                "feature_1": {
+                    "title": "01",
+                    "description": "Realice un seguimiento de las actividades y los comportamientos en línea para mapear huellas digitales en varias plataformas en línea, mejorando la visibilidad y el control"
+                },
+                "feature_2": {
+                    "title": "02",
+                    "description": "TUCAN está más que bien equipado cuando se trata de utilizar tecnologías de inteligencia artificial avanzadas para un examen de imágenes en profundidad y un reconocimiento facial preciso"
+                },
+                "feature_3": {
+                    "title": "03",
+                    "description": "Implementar algoritmos complejos para explorar conexiones y visualizar relaciones entre entidades, descubriendo redes y patrones ocultos"
+                },
+                "feature_4": {
+                    "title": "04",
+                    "description": "Monitoreo de actividades en foros de la web y la darknet, brindando información completa sobre la actividad de los usuarios y los temas discutidos"
+                },
+                "feature_5": {
+                    "title": "05",
+                    "description": "Manejar, procesar y analizar conjuntos de datos masivos con alta eficiencia, lo que permite tomar decisiones basadas en datos y obtener información a gran escala"
+                }
+            }
+        },
+        "menu_3": {
+            "text": "Contáctenos",
+            "after_click": {
+                "url": "https://tucan.online/contact-us.html",
+                "main_title": "Contáctenos",
+                "sub_title": "Te invitamos a descubrir más sobre TUCAN",
+                "placeholder_text_in_form" : {
+                    "input_1" : "nombre",
+                    "input_2" : "apellido",
+                    "input_3" : "dirección de correo electrónico",
+                    "input_4" : "número de teléfono",
+                    "input_5" : "organización",
+                    "input_6" : "título",
+                    "input_7" : "seleccionar país",
+                    "input_8" : "sitio web de la organización",
+                    "input_9" : "escribe tu mensaje",
+                    "checkbox_text" : "onsiento las políticas de privacidad de Tucan, incluidas las comunicaciones de marketing por correo electrónico y teléfono"
+                },
+                "submit_button_text" : "enviar"
+            }
+        }
+    },
+    "main_theme": {
+        "main_title": "Su solución integral de monitoreo OSINT",
+        "sub_title": "Un software de vigilancia OSINT avanzado que integra sin problemas múltiples fuentes de datos en una única y poderosa herramienta",
+        "button": {
+            "title": "reservar una demostración",
+            "after_click": {
+                "url": "modal",
+                "title" : "ENVÍA EL FORMULARIO Y EL EQUIPO DE TUCAN TE CONTACTARÁ PRONTO",
+                "placeholder_text_in_form" : {
+                    "input_1" : "nombre",
+                    "input_2" : "apellido",
+                    "input_3" : "dirección de correo electrónico",
+                    "input_4" : "título",
+                    "input_5" : "organización",
+                    "input_6" : "seleccionar país",
+                    "checkbox_text" : "consiento las políticas de privacidad de Tucan, incluidas las comunicaciones de marketing por correo electrónico y teléfono"
+                },
+                "submit_button_text" : "enviar"
+            }
+        }
+    },
+    "introduction": {
+        "title" : "Bienvenidos a TUCAN",
+        "description" : "Profundice en las fortalezas de TUCAN y descubra cómo nuestra tecnología mejora las operaciones de inteligencia, brindándole una ventaja estratégica en el complejo panorama digital. Las plataformas de Internet sirven como el camuflaje ideal para una variedad de intenciones dañinas. Para contrarrestar eso, inventamos Tucan: una solución sofisticada, desarrollada mediante inteligencia artificial, que puede ayudarlo a buscar, recopilar y contrastar datos para encontrar exactamente lo que está buscando"
+
+    },
+    "explore": {
+        "title" : "Tenemos acceso...",
+        "description" : "Explore el poder de TUCAN, su puerta de entrada a OSINT avanzado. Nuestra plataforma integra múltiples fuentes de datos, lo que permite un seguimiento preciso de la huella digital y el enriquecimiento de perfiles. Aprovechando el análisis impulsado por IA, transformamos conjuntos de datos complejos en inteligencia procesable, lo que mejora la toma de decisiones estratégicas"
+    },
+    "platform": {
+        "title": "Plataforma TUCAN",
+        "feature_1": {
+            "title": "Law Enforcement & Intelligence agencies",
+            "description": "Al aprovechar la inteligencia artificial y el análisis avanzados para analizar datos públicos, brindamos información en tiempo real, respaldamos investigaciones y descubrimos conexiones ocultas para mejorar la eficacia operativa"
+        },
+        "feature_2": {
+            "title": "Visibilidad incomparable",
+            "description": "Ofrecemos una visibilidad incomparable de los entornos digitales a través de análisis avanzados y datos integrados, lo que garantiza un monitoreo en tiempo real y una detección precisa de amenazas"
+        },
+        "feature_3": {
+            "title": "Ideal para entornos web amplios",
+            "description": "TUCAN rastrea datos de una gran cantidad de fuentes, como mensajería instantánea, redes sociales, la darknet, foros, blockchain y muchos más, proporcionando inteligencia integral para investigaciones proactivas"
+        },
+        "button": {
+            "title": "Más información",
+            "after_click": {
+                "url": "https://tucan.online/platform.html",
+                "main_title": "Plataforma TUCAN",
+                "sub_title": "Aproveche TUCAN para lograr una vigilancia digital inigualable, seguridad nacional y capacidades de inteligencia exclusivas",
+                "feature_4": {
+                    "title": "Vigilancia en todos los ámbitos digitales",
+                    "description": "TUCAN ofrece una amplia cobertura de redes sociales, mensajería instantánea, darknet, foros y más, brindando una visibilidad incomparable en entornos digitales y garantizando sólidos recursos de vigilancia y análisis"
+                },
+                "feature_5": {
+                    "title": "Especializado en seguridad nacional",
+                    "description": "Diseñado para satisfacer las rigurosas demandas de las agencias de inteligencia y de aplicación de la ley, Tucan ofrece capacidades de monitoreo en una amplia gama de fuentes"
+                },
+                "feature_6": {
+                    "title": "Funciones de inteligencia exclusivas",
+                    "description": "Rastrea y analiza huellas digitales con inteligencia artificial avanzada, análisis de imágenes y reconocimiento facial. Nuestros algoritmos revelan redes ocultas, mientras monitorean foros y la red oscura para obtener información detallada sobre las actividades de los usuarios"
+                }
+            }
+        }
+    },
+    "Características principales": {
+        "title": "componentes principales",
+        "button": {
+            "title": "Más información",
+            "after_click": {
+                "url": "https://tucan.online/key-feature.html",
+                "main_title": "Características principales",
+                "sub_title": "Aproveche todo el potencial de las capacidades de IA y los algoritmos sofisticados para monitorear y analizar las comunicaciones a través de redes digitales",
+                "feature_1": {
+                    "title": "01",
+                    "description": "Realice un seguimiento de las actividades y los comportamientos en línea para mapear huellas digitales en varias plataformas en línea, mejorando la visibilidad y el control"
+                },
+                "feature_2": {
+                    "title": "02",
+                    "description": "Tucan está más que bien equipado cuando se trata de utilizar tecnologías de inteligencia artificial avanzadas para un examen de imágenes en profundidad y un reconocimiento facial preciso"
+                },
+                "feature_3": {
+                    "title": "03",
+                    "description": "Implementar algoritmos complejos para explorar conexiones y visualizar relaciones entre entidades, descubriendo redes y patrones ocultos"
+                },
+                "feature_4": {
+                    "title": "04",
+                    "description": "Monitoreo de actividades en foros de la web y la darknet, brindando información completa sobre la actividad de los usuarios y los temas discutidos"
+                },
+                "feature_5": {
+                    "title": "05",
+                    "description": "Manejar, procesar y analizar conjuntos de datos masivos con alta eficiencia, lo que permite tomar decisiones basadas en datos y obtener información a gran escala"
+                }
+            }
+        }
+    },
+    "video": {
+        "short_title": "Mira nuestro cortometraje",
+        "main_title": "Tucan: El futuro de la inteligencia",
+        "sub_title": "DESCUBRE CÓMO TUCAN PUEDE TRANSFORMAR TUS OPERACIONES DE SEGURIDAD E INTELIGENCIA",
+        "button": {
+            "title": "Registro",
+            "after_click": {
+                "url": "modal",
+                "title" : "RELLENA EL FORMULARIO PARA ACCEDER AL VIDEO DE TUCAN",
+                "placeholder_text_in_form" : {
+                    "input_1" : "nombre",
+                    "input_2" : "apellido",
+                    "input_3" : "dirección de correo electrónico",
+                    "input_4" : "título",
+                    "input_5" : "organización",
+                    "input_6" : "seleccionar país",
+                    "checkbox_text" : "consiento las políticas de privacidad de Tucan, incluidas las comunicaciones de marketing por correo electrónico y teléfono"
+                },
+                "submit_button_text" : "enviar"
+            }
+        }
+    },
+    "experience": {
+        "short_title": "¿Quiere saber cómo operamos?",
+        "main_title": "Experimente TUCAN en acción",
+        "sub_title": "HAGA UNA RESERVA PARA TENER UNA EXPERIENCIA DE PRIMERA MANO DE NUESTRA SOLUCIÓN AVANZADA",
+        "button": {
+            "title": "reservar una demo",
+            "after_click": {
+                "url": "modal",
+                "title" : "ENVÍE EL FORMULARIO Y EL EQUIPO DE TUCAN SE PONDRÁ EN CONTACTO CON USTED EN BREVE",
+                "placeholder_text_in_form" : {
+                    "input_1" : "nombre",
+                    "input_2" : "apellido",
+                    "input_3" : "dirección de correo electrónico",
+                    "input_4" : "título",
+                    "input_5" : "organización",
+                    "input_6" : "seleccionar país",
+                    "checkbox_text" : "consiento las políticas de privacidad de Tucan, incluidas las comunicaciones de marketing por correo electrónico y teléfono"
+                },
+                "submit_button_text" : "enviar"
+            }
+        }
+    },
+    "contact_us": {
+        "main_title": "Hablemos",
+        "sub_title": "CONTÁCTENOS HOY PARA EXPLORAR LOS BENEFICIOS DE TUCAN",
+        "button": {
+            "title": "Contáctenos",
+            "after_click": {
+                "url": "https://tucan.online/contact-us.html",
+                "main_title": "Contáctenos",
+                "sub_title": "Te invitamos a descubrir más sobre TUCAN",
+                "placeholder_text_in_form" : {
+                    "input_1" : "nombre",
+                    "input_2" : "apellido",
+                    "input_3" : "dirección de correo electrónico",
+                    "input_4" : "número de teléfono",
+                    "input_5" : "organización",
+                    "input_6" : "título",
+                    "input_7" : "seleccionar país",
+                    "input_8" : "sitio web de la organización",
+                    "input_9" : "escribe tu mensaje",
+                    "checkbox_text" : "consiento las políticas de privacidad de Tucan, incluidas las comunicaciones de marketing por correo electrónico y teléfono"
+                },
+                "submit_button_text" : "enviar"
+            }
+        }
+    },
+    "footer": {
+        "section_1": {
+            "title" : "POLÍTICAS DE PRIVACIDAD",
+            "after_click": {
+                "url": "https://tucan.online/privacy-policies.html",
+                "main_title": "POLÍTICAS DE PRIVACIDAD",
+                "content_1": {
+                    "title": "Introducción",
+                    "description": {
+                        "title":"Bienvenido al sitio web de TUCAN. Nos comprometemos a proteger su privacidad y a garantizar que su información personal se maneje de manera segura y responsable. Esta Política de privacidad describe cómo recopilamos, usamos y protegemos su información cuando utiliza nuestro sitio web."
+                    }
+                },
+                "content_2": {
+                    "title": "Información que recopilamos",
+                    "description": {
+                        "text": "Solo recopilamos información personal que usted proporciona voluntariamente a través de nuestros formularios opcionales. Los formularios pueden solicitar la siguiente información:",
+                        "ul_1": "Nombre de pila",
+                        "ul_2": "Apellido",
+                        "ul_3": "Dirección de correo electrónico",
+                        "ul_4": "Título profesional",
+                        "ul_5": "Organización",
+                        "ul_6": "Sitio web de la empresa",
+                        "ul_7": "País"
+                    }
+                },
+                "content_3": {
+                    "title": "Cómo utilizamos su información",
+                    "description": {
+                        "text": "La información que usted proporciona se utiliza para los siguientes fines:",
+                        "ul_1": "Para responder a sus consultas y prestarle los servicios que solicita.",
+                        "ul_2": "Para mejorar nuestro sitio web y los servicios que ofrecemos.",
+                        "ul_3": "Para comunicarnos con usted sobre actualizaciones y otra información relacionada con nuestros servicios (si ha optado por recibir dichas comunicaciones)."
+                    }
+                },
+                "content_4": {
+                    "title": "Seguridad de datos",
+                    "description": {
+                        "text": "Nos tomamos muy en serio la seguridad de su información personal. Implementamos medidas técnicas y organizativas adecuadas para proteger sus datos contra acceso, divulgación, alteración o destrucción no autorizados."
+                    }
+                },
+                "content_5": {
+                    "title": "Compartir su información",
+                    "description": {
+                        "text": "No vendemos, comercializamos ni transferimos de ningún otro modo su información personal a terceros."
+                    }
+                },
+                "content_6": {
+                    "title": "Su consentimiento",
+                    "description": {
+                        "text": "Al utilizar nuestro sitio web y proporcionar voluntariamente su información personal, usted acepta nuestra Política de privacidad."
+                    }
+                },
+                "content_7": {
+                    "title": "Cambios en nuestra política de privacidad",
+                    "description": {
+                        "text": "Es posible que actualicemos nuestra Política de privacidad de vez en cuando. Los cambios se publicarán en esta página y le recomendamos que revise esta política periódicamente."
+                    }
+                },
+                "content_8": {
+                    "title": "Contáctenos",
+                    "description": {
+                        "text": "Si tiene alguna pregunta o inquietud sobre nuestra Política de privacidad, contáctenos en info@2can.online ."
+                    }
+                }
+            }
+        },
+        "section_2": {
+            "title" : "Términos y condiciones",
+            "after_click": {
+                "url": "https://tucan.online/terms-conditions.html",
+                "main_title": "Términos y condiciones",
+                "content_1": {
+                    "title": "Introducción",
+                    "description": "Bienvenido a TUCAN. Estos Términos y Condiciones rigen el uso de nuestro sitio web. Al acceder o utilizar nuestro sitio web, usted acepta cumplir y estar sujeto a estos términos. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro sitio web."
+                },
+                "content_2": {
+                    "title": "Uso del sitio web",
+                    "description": {
+                        "ul_1": "Requisitos: Debe tener al menos 18 años de edad para utilizar nuestro sitio web. Al utilizar nuestro sitio web, declara y garantiza que cumple con este requisito.",
+                        "ul_2": "Conducta prohibida: Usted acepta no utilizar nuestro sitio web para ningún propósito ilegal o de cualquier manera que pueda dañar, deshabilitar, sobrecargar o deteriorar el sitio web."
+                    }
+                },
+                "content_3": {
+                    "title": "Contenido",
+                    "description": {
+                        "ul_1": "Contenido del usuario: Usted conserva la propiedad de cualquier contenido que envíe a través de nuestro sitio web. Al enviar contenido, nos otorga una licencia mundial, no exclusiva y libre de regalías para utilizar su contenido.",
+                        "ul_2": "Contenido prohibido: Usted acepta no enviar ningún contenido que sea ofensivo, difamatorio, obsceno o de otro modo objetable."
+                    }
+                },
+                "content_4": {
+                    "title": "política de privacidad",
+                     "description": {
+                        "text": "Su uso de nuestro sitio web también se rige por nuestra Política de privacidad, que describe cómo recopilamos, usamos y protegemos su información."
+                    }
+                },
+                "content_5": {
+                    "title": "Propiedad intelectual",
+                     "description": {
+                        "text": "Todo el contenido de nuestro sitio web, incluidos textos, gráficos, logotipos y software, es propiedad de TUCAN o de sus proveedores de contenido y está protegido por las leyes de propiedad intelectual. No puede utilizar ningún contenido de nuestro sitio web sin nuestro permiso previo por escrito."
+                    }
+                },
+                "content_6": {
+                    "title": "Descargo de responsabilidad de garantías",
+                     "description": {
+                        "text": "Nuestro sitio web se ofrece \"tal como está\" y \"según disponibilidad\" sin garantías de ningún tipo, ya sean expresas o implícitas. No garantizamos que nuestro sitio web no presente interrupciones, errores o virus u otros componentes dañinos.."
+                    }
+                },
+                "content_7": {
+                    "title": "Limitación de responsabilidad",
+                     "description": {
+                        "text": "En la máxima medida permitida por la ley, TUCAN no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que surja de o en conexión con su uso de nuestro sitio web."
+                    }
+                },
+                "content_8": {
+                    "title": "Indemnización",
+                     "description": {
+                        "text": "Usted acepta indemnizar y eximir a TUCAN de cualquier reclamo, daño, pérdida, responsabilidad y gasto que surja de su uso de nuestro sitio web o de su violación de estos Términos y Condiciones."
+                    }
+                },
+                "content_9": {
+                    "title": "Cambios en los Términos y Condiciones",
+                     "description": {
+                        "text": "Es posible que actualicemos estos Términos y condiciones de vez en cuando. Cualquier cambio se publicará en esta página y su uso continuo de nuestro sitio web después de dichos cambios constituye su aceptación de los nuevos términos."
+                    }
+                },
+                "content_10": {
+                    "title": "Contáctenos",
+                     "description": {
+                        "text": "Si tiene alguna pregunta o inquietud sobre nuestra Política de privacidad, contáctenos en info@2can.online ."
+                    }
+                }
+            }
+        },
+        "section_3": {
+            "title": "Copyright © 2024. Todos los derechos reservados"
+        }
+    }
+  }
+  

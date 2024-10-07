@@ -1,4 +1,124 @@
-window.onload = function() {
+let contentData;
+
+const commonRender=()=>{
+  console.log(document.querySelector('.menu_1').textContent, contentData?.footer?.section_1?.title);
+  document.querySelector('.menu_1').textContent = contentData?.menu?.menu_1?.text;
+  document.querySelector('.menu_2').textContent = contentData?.menu?.menu_2?.text;
+  document.querySelector('.menu_3').textContent = contentData?.menu?.menu_3?.text;
+  document.querySelector('.footer-menu-1').textContent = contentData?.footer?.section_1?.title;
+  document.querySelector('.footer-menu-2').textContent = contentData?.footer?.section_2?.title;
+  document.querySelector('.copyright-text').textContent = contentData?.footer?.section_3?.title;
+  specificRender();
+
+}
+
+const specificRender=()=>{
+  const dataPage = document.body.getAttribute('data-page');
+    if(dataPage === 'home'){
+      homeRender();
+    }
+    else if(dataPage === 'platform'){}
+    else if(dataPage === 'key-feature'){}
+    else if(dataPage === 'contact'){}
+    else if(dataPage === 'terms-conditions'){}
+    else if(dataPage === 'privacy'){}
+}
+
+
+const fetchData = async (language) => {
+  return fetch(`./lang/${language}.json`)
+      .then(response => response.json())
+      .then(data => {
+        contentData = data;
+      })
+      .catch(error => {
+        console.error('Error fetching the JSON file:', error);
+      });
+}
+
+function changeLanguage(languageCode, languageName, flagPath) {
+  return new Promise((resolve, reject) => {
+    // Update the button's flag and text
+    const languageButton = document.getElementById('languageButton');
+    const currentFlag = document.getElementById('currentFlag');
+
+    // Change the button text and flag
+    languageButton.innerHTML = `<img src="${flagPath}" alt="${languageName} Flag" id="currentFlag"> ${languageName}`;
+
+    console.log("Selected Language: " + languageCode);
+
+    localStorage.setItem('selectedLanguage', languageCode);
+    localStorage.setItem('selectedLanguageName', languageName);
+    localStorage.setItem('selectedLanguageFlag', flagPath);
+    fetchData(languageCode)
+        .then(() => {
+          commonRender();
+          resolve();
+        })
+        .catch(reject);
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (localStorage.getItem('selectedLanguage')) {
+    changeLanguage(localStorage.getItem('selectedLanguage'), localStorage.getItem('selectedLanguageName'), localStorage.getItem('selectedLanguageFlag'));
+  } else {
+    changeLanguage('en', 'Eng (US)', 'assets/flag/gb.svg');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  commonRender();
+});
+
+
+
+const homeRender=()=>{
+  document.querySelector('.home-header-title').textContent = contentData?.main_theme?.main_title;
+  document.querySelector('.home-header-desc').textContent = contentData?.main_theme?.sub_title;
+  document.querySelectorAll('.book-demo-btn').forEach((element)=>{
+    element.textContent = contentData?.main_theme?.button?.title || 'Book a Demo';
+  });
+  document.querySelector('.demo-modal-title').textContent = contentData?.main_theme?.button?.after_click?.title || '';
+   document.querySelector('#demo-request input[name="first_name"]').placeholder = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_1 || 'First Name';
+   document.querySelector('#demo-request input[name="last_name"]').placeholder = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_2 || 'Last Name';
+   document.querySelector('#demo-request input[name="email"]').placeholder = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_3 || 'Email';
+   document.querySelector('#demo-request input[name="title"]').placeholder = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_4 || 'Title';
+   document.querySelector('#demo-request input[name="organization"]').placeholder = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_5 || 'organization';
+  const countrySelect = document.querySelector('#demo-request select[name="country"]');
+  if (countrySelect && countrySelect.options.length > 0) {
+    console.log('countrySelect.options[0]', countrySelect.options[0])
+    countrySelect.options[0].textContent = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_6.toUpperCase() || 'Select Country'.toUpperCase();
+  }
+  document.querySelectorAll('.agree-label').forEach((element)=>{
+    element.textContent = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.checkbox_text || 'i consent to tucan’s privacy policies, including marketing communications via email and telephone';
+  });
+  document.querySelector('#demo-request button[type="submit"]').textContent = contentData?.main_theme?.button?.after_click?.submit_button_text || 'Submit';
+
+    document.querySelector('.welcome-card-title-text').textContent = contentData?.introduction?.title || '';
+    document.querySelector('.welcome-card-desc-1').textContent = contentData?.introduction?.description || '';
+    if(!contentData?.introduction?.description_2){
+      document.querySelector('.welcome-card-desc-2').classList.add('d-none');
+    }
+
+    document.querySelector('.home-access-title').textContent = contentData?.explore?.title || '';
+    document.querySelector('.home-access-desc').textContent = contentData?.explore?.description || '';
+
+    document.querySelector('.home-platform-title').textContent = contentData?.platform?.title || '';
+
+    document.querySelector('.platform-1-title').textContent = contentData?.platform?.feature_1?.title || '';
+    document.querySelector('.platform-1-desc').textContent = contentData?.platform?.feature_1?.description || '';
+    document.querySelector('.platform-2-title').textContent = contentData?.platform?.feature_1?.title || '';
+    document.querySelector('.platform-2-desc').textContent = contentData?.platform?.feature_1?.description || '';
+    document.querySelector('.platform-3-title').textContent = contentData?.platform?.feature_1?.title || '';
+    document.querySelector('.platform-3-desc').textContent = contentData?.platform?.feature_1?.description || '';
+    document.querySelector('.home-platform-btn').textContent = contentData?.platform?.button?.title || '';
+
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
   // Get the parent div
   var parentDiv = document.querySelector('.core-image-inner-block-wrapper');
 
@@ -253,7 +373,7 @@ window.onload = function() {
     });
   }
 
-};
+});
 
 
 function showResponseMessage(message , type= 'alert-success', parentDiv= 'responseAlert'){

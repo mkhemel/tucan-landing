@@ -1,0 +1,379 @@
+{
+    "website": "Tucan",
+    "url": "https://tucan.online/",
+    "language": "english",
+    "menu": {
+        "menu_1": {
+            "text": "Platform",
+            "after_click": {
+                "url": "https://tucan.online/platform.html",
+                "main_title": "Tucan Platform",
+                "sub_title": "Harness TUCAN for Unmatched Digital Surveillance, National Security, and Exclusive Intelligence Capabilities",
+                "feature_1": {
+                    "title": "Surveillance across all digital realms",
+                    "description": "TUCAN offers extensive coverage of social networks, instant messengers, darknet, forums & more, providing unparalleled visibility into digital environments & ensuring robust surveillance & analysis resources"
+                },
+                "feature_2": {
+                    "title": "Specialized for national security",
+                    "description": "Designed to meet the rigorous demands of law enforcement & intelligence agencies, tucan delivers monitoring capabilities across a vast array of sources"
+                },
+                "feature_3": {
+                    "title": "Exclusive intelligence features",
+                    "description": "Track and analyze digital footprints with advanced AI, image analytics, and facial recognition. Our algorithms reveal hidden networks, while monitoring forums and the darknet for deep insights into user activities"
+                }
+            }
+        },
+        "menu_2": {
+            "text": "Key features",
+            "after_click": {
+                "url": "https://tucan.online/key-feature.html",
+                "main_title": "Key Features",
+                "sub_title": "Harness the full potential of AI capabilities and sophisticated algorithms to monitor and analyze communications across digital networks",
+                "feature_1": {
+                    "title": "01",
+                    "description": "Track online activities and behaviors to map digital footprints across various online platforms, enhancing visibility and control"
+                },
+                "feature_2": {
+                    "title": "02",
+                    "description": "Tucan is beyond well-eqipped when it comes to Utilizing advanced AI technologies for in-depth image examination and accurate facial recognition"
+                },
+                "feature_3": {
+                    "title": "03",
+                    "description": "Deploy complex algorithms to explore connections and visualize relationships between entities, uncovering hidden networks and patterns"
+                },
+                "feature_4": {
+                    "title": "04",
+                    "description": "Monitoring activities on forums from the web and the darknet, providing comprehensive insights into users activity and discussed topics"
+                },
+                "feature_5": {
+                    "title": "05",
+                    "description": "Handle, process, and analyze massive datasets with high efficiency, enabling data-driven decisions and insights at scale"
+                }
+            }
+        },
+        "menu_3": {
+            "text": "Contact Us",
+            "after_click": {
+                "url": "https://tucan.online/contact-us.html",
+                "main_title": "Contact Us",
+                "sub_title": "You are welcome to discover more about TUCAN",
+                "placeholder_text_in_form" : {
+                    "input_1" : "first name",
+                    "input_2" : "last name",
+                    "input_3" : "email address",
+                    "input_4" : "phone number",
+                    "input_5" : "organization",
+                    "input_6" : "title",
+                    "input_7" : "select country",
+                    "input_8" : "organization website",
+                    "input_9" : "write your message",
+                    "checkbox_text" : "i consent to tucan’s privacy policies, including marketing communications via email and telephone"
+                },
+                "submit_button_text" : "submit"
+            }
+        }
+    },
+    "main_theme": {
+        "main_title": "Your All-in-One OSINT Monitoring Solution",
+        "sub_title": "an advanced OSINT surveillance software that smoothly integrates multiple data sources into a single, powerful tool",
+        "button": {
+            "title": "book a demo",
+            "after_click": {
+                "url": "modal",
+                "title" : "SUBMIT THE FORM & THE TUCAN TEAM WILL CONTACT YOU SHORTLY",
+                "placeholder_text_in_form" : {
+                    "input_1" : "first name",
+                    "input_2" : "last name",
+                    "input_3" : "email address",
+                    "input_4" : "title",
+                    "input_5" : "organization",
+                    "input_6" : "select country",
+                    "checkbox_text" : "i consent to tucan’s privacy policies, including marketing communications via email and telephone"
+                },
+                "submit_button_text" : "submit"
+            }
+        }
+    },
+    "introduction": {
+        "title" : "Welcome to Tucan",
+        "description" : "Delve into the strengths of TUCAN and discover how our technology enhances intelligence operations, giving you a strategic edge in the complex digital landscape. Internet platforms serve as the ideal camouflage for a variety of harmful intentions. To counteract that, we invented Tucan - a sophisticated solution, advanced by artificial intelligence, that can help you seek, collect, & cross-reference data to find exactly what you are looking for"
+
+    },
+    "explore": {
+        "title" : "We have access...",
+        "description" : "Explore the power of TUCAN, your gateway to advanced OSINT. Our platform integrates multiple data sources, enabling precise digital footprint tracking and profile enrichment. Leveraging AI-driven analytics, we transform complex data sets into actionable intelligence, enhancing strategic decision-making"
+    },
+    "platform": {
+        "title": "Tucan Platform",
+        "feature_1": {
+            "title": "Law Enforcement & Intelligence agencies",
+            "description": "By leveraging advanced AI and analytics to analyze public data, we provide real-time insights, support investigations, and uncover hidden connections to enhance operational effectiveness."
+        },
+        "feature_2": {
+            "title": "Unparalleled visibility",
+            "description": "We offer unparalleled visibility into digital environments through advanced analytics and integrated data, ensuring real-time monitoring and precise threat detection."
+        },
+        "feature_3": {
+            "title": "Ideal for wide web environment",
+            "description": "TUCAN tracks data from a vast number of sources like instant messengers, social media, the darknet, forums, blockchain and many more, providing comprehensive intelligence for proactive investigations."
+        },
+        "button": {
+            "title": "learn more",
+            "after_click": {
+                "url": "https://tucan.online/platform.html",
+                "main_title": "Tucan Platform",
+                "sub_title": "Harness TUCAN for Unmatched Digital Surveillance, National Security, and Exclusive Intelligence Capabilities",
+                "feature_4": {
+                    "title": "Surveillance across all digital realms",
+                    "description": "TUCAN offers extensive coverage of social networks, instant messengers, darknet, forums & more, providing unparalleled visibility into digital environments & ensuring robust surveillance & analysis resources"
+                },
+                "feature_5": {
+                    "title": "Specialized for national security",
+                    "description": "Designed to meet the rigorous demands of law enforcement & intelligence agencies, tucan delivers monitoring capabilities across a vast array of sources"
+                },
+                "feature_6": {
+                    "title": "Exclusive intelligence features",
+                    "description": "Track and analyze digital footprints with advanced AI, image analytics, and facial recognition. Our algorithms reveal hidden networks, while monitoring forums and the darknet for deep insights into user activities"
+                }
+            }
+        }
+    },
+    "key-feature": {
+        "title": "core components",
+        "button": {
+            "title": "learn more",
+            "after_click": {
+                "url": "https://tucan.online/key-feature.html",
+                "main_title": "Key Features",
+                "sub_title": "Harness the full potential of AI capabilities and sophisticated algorithms to monitor and analyze communications across digital networks",
+                "feature_1": {
+                    "title": "01",
+                    "description": "Track online activities and behaviors to map digital footprints across various online platforms, enhancing visibility and control"
+                },
+                "feature_2": {
+                    "title": "02",
+                    "description": "Tucan is beyond well-eqipped when it comes to Utilizing advanced AI technologies for in-depth image examination and accurate facial recognition"
+                },
+                "feature_3": {
+                    "title": "03",
+                    "description": "Deploy complex algorithms to explore connections and visualize relationships between entities, uncovering hidden networks and patterns"
+                },
+                "feature_4": {
+                    "title": "04",
+                    "description": "Monitoring activities on forums from the web and the darknet, providing comprehensive insights into users activity and discussed topics"
+                },
+                "feature_5": {
+                    "title": "05",
+                    "description": "Handle, process, and analyze massive datasets with high efficiency, enabling data-driven decisions and insights at scale"
+                }
+            }
+        }
+    },
+    "video": {
+        "short_title": "Watch our short movie",
+        "main_title": "Tucan: The Future of Intelligence",
+        "sub_title": "FIND OUT HOW TUCAN CAN TRANSFORM YOUR SECURITY & INTELLIGENCE OPERATIONS",
+        "button": {
+            "title": "register",
+            "after_click": {
+                "url": "modal",
+                "title" : "FILL UP THE FORM TO GAIN ACCESS TO THE TUCAN VIDEO",
+                "placeholder_text_in_form" : {
+                    "input_1" : "first name",
+                    "input_2" : "last name",
+                    "input_3" : "email address",
+                    "input_4" : "title",
+                    "input_5" : "organization",
+                    "input_6" : "select country",
+                    "checkbox_text" : "i consent to tucan’s privacy policies, including marketing communications via email and telephone"
+                },
+                "submit_button_text" : "submit"
+            }
+        }
+    },
+    "experience": {
+        "short_title": "Wondering how we operate?",
+        "main_title": "Experience TUCAN in Action",
+        "sub_title": "MAKE A RESERVATION TO HAVE A FIRSTHAND EXPERIENCE OF OUR ADVANCED SOLUTION",
+        "button": {
+            "title": "book a demo",
+            "after_click": {
+                "url": "modal",
+                "title" : "SUBMIT THE FORM & THE TUCAN TEAM WILL CONTACT YOU SHORTLY",
+                "placeholder_text_in_form" : {
+                    "input_1" : "first name",
+                    "input_2" : "last name",
+                    "input_3" : "email address",
+                    "input_4" : "title",
+                    "input_5" : "organization",
+                    "input_6" : "select country",
+                    "checkbox_text" : "i consent to tucan’s privacy policies, including marketing communications via email and telephone"
+                },
+                "submit_button_text" : "submit"
+            }
+        }
+    },
+    "contact_us": {
+        "main_title": "Let’s talk",
+        "sub_title": "REACH OUT TO US TODAY TO EXPLORE THE BENEFITS OF TUCAN",
+        "button": {
+            "title": "contact us",
+            "after_click": {
+                "url": "https://tucan.online/contact-us.html",
+                "main_title": "Contact Us",
+                "sub_title": "You are welcome to discover more about TUCAN",
+                "placeholder_text_in_form" : {
+                    "input_1" : "first name",
+                    "input_2" : "last name",
+                    "input_3" : "email address",
+                    "input_4" : "phone number",
+                    "input_5" : "organization",
+                    "input_6" : "title",
+                    "input_7" : "select country",
+                    "input_8" : "organization website",
+                    "input_9" : "write your message",
+                    "checkbox_text" : "i consent to tucan’s privacy policies, including marketing communications via email and telephone"
+                },
+                "submit_button_text" : "submit"
+            }
+        }
+    },
+    "footer": {
+        "section_1": {
+            "title" : "privacy policies",
+            "after_click": {
+                "url": "https://tucan.online/privacy-policies.html",
+                "main_title": "PRIVACY POLICIES",
+                "content_1": {
+                    "title": "Introduction",
+                    "description": {
+                        "title":"Welcome to TUCAN website. We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy outlines how we collect, use, and protect your information when you use our website."
+                    }
+                },
+                "content_2": {
+                    "title": "Information We Collect",
+                    "description": {
+                        "text": "We only collect personal information that you voluntarily provide through our optional forms. The forms may request the following information:",
+                        "ul_1": "First Name",
+                        "ul_2": "Last Name",
+                        "ul_3": "Email Address",
+                        "ul_4": "Job Title",
+                        "ul_5": "Organization",
+                        "ul_6": "Company Website",
+                        "ul_7": "Country"
+                    }
+                },
+                "content_3": {
+                    "title": "How We Use Your Information",
+                    "description": {
+                        "text": "The information you provide is used for the following purposes:",
+                        "ul_1": "To respond to your inquiries and provide the services you request.",
+                        "ul_2": "To improve our website and the services we offer.",
+                        "ul_3": "To communicate with you about updates and other information related to our services (if you have opted to receive such communications)."
+                    }
+                },
+                "content_4": {
+                    "title": "Data Security",
+                    "description": {
+                        "text": "We take the security of your personal information seriously. We implement appropriate technical and organizational measures to protect your data from unauthorized access, disclosure, alteration, or destruction."
+                    }
+                },
+                "content_5": {
+                    "title": "Sharing Your Information",
+                    "description": {
+                        "text": "We do not sell, trade, or otherwise transfer your personal information to outside parties."
+                    }
+                },
+                "content_6": {
+                    "title": "Your Consent",
+                    "description": {
+                        "text": "By using our website and voluntarily providing your personal information, you consent to our Privacy Policy."
+                    }
+                },
+                "content_7": {
+                    "title": "Changes to Our Privacy Policy",
+                    "description": {
+                        "text": "We may update our Privacy Policy from time to time. Any changes will be posted on this page, and we encourage you to review this policy periodically."
+                    }
+                },
+                "content_8": {
+                    "title": "Contact Us",
+                    "description": {
+                        "text": "If you have any questions or concerns about our Privacy Policy, please contact us at info@2can.online."
+                    }
+                }
+            }
+        },
+        "section_2": {
+            "title" : "Terms & Conditions",
+            "after_click": {
+                "url": "https://tucan.online/terms-conditions.html",
+                "main_title": "Terms and Conditions",
+                "content_1": {
+                    "title": "Introduction",
+                    "description": "Welcome to TUCAN. These Terms and Conditions govern your use of our website. By accessing or using our website, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, you should not use our website."
+                },
+                "content_2": {
+                    "title": "Use of Website",
+                    "description": {
+                        "ul_1": "Eligibility: You must be at least 18 years of age to use our website. By using our website, you represent and warrant that you meet this requirement.",
+                        "ul_2": "Prohibited Conduct: You agree not to use our website for any unlawful purpose or in any way that could harm, disable, overburden, or impair the website."
+                    }
+                },
+                "content_3": {
+                    "title": "Content",
+                    "description": {
+                        "ul_1": "User Content: You retain ownership of any content you submit through our website. By submitting content, you grant us a worldwide, non-exclusive, royalty-free license to use your content.",
+                        "ul_2": "Prohibited Content: You agree not to submit any content that is offensive, defamatory, obscene, or otherwise objectionable.."
+                    }
+                },
+                "content_4": {
+                    "title": "Privacy Policy",
+                     "description": {
+                        "text": "Your use of our website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your information."
+                    }
+                },
+                "content_5": {
+                    "title": "Intellectual Property",
+                     "description": {
+                        "text": "All content on our website, including text, graphics, logos, and software, is the property of TUCAN or its content suppliers and is protected by intellectual property laws. You may not use any content from our website without our prior written permission."
+                    }
+                },
+                "content_6": {
+                    "title": "Disclaimer of Warranties",
+                     "description": {
+                        "text": "Our website is provided \"as is\" and \"as available\" without any warranties of any kind, either express or implied. We do not warrant that our website will be uninterrupted, error-free, or free of viruses or other harmful components."
+                    }
+                },
+                "content_7": {
+                    "title": "Limitation of Liability",
+                     "description": {
+                        "text": "To the fullest extent permitted by law, TUCAN shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of our website."
+                    }
+                },
+                "content_8": {
+                    "title": "Indemnification",
+                     "description": {
+                        "text": "You agree to indemnify and hold TUCAN harmless from any claims, damages, losses, liabilities, and expenses arising out of your use of our website or your violation of these Terms and Conditions."
+                    }
+                },
+                "content_9": {
+                    "title": "Changes to Terms and Conditions",
+                     "description": {
+                        "text": "We may update these Terms and Conditions from time to time. Any changes will be posted on this page, and your continued use of our website after such changes constitutes your acceptance of the new terms."
+                    }
+                },
+                "content_10": {
+                    "title": "Contact Us",
+                     "description": {
+                        "text": "If you have any questions or concerns about our Privacy Policy, please contact us at info@2can.online."
+                    }
+                }
+            }
+        },
+        "section_3": {
+            "title": "Copyright © 2024. All rights reserved"
+        }
+    }
+  }
+  

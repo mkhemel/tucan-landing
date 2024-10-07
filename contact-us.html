@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body data-page="contact">
 <header class="contact-header">
     <div class="container-wrap contact-top-wrap">
         <nav class="navbar navbar-cs navbar-expand-lg">
@@ -24,15 +24,31 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-custom">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="platform.html">Platform</a>
+                            <a class="nav-link menu_1 " aria-current="page" href="platform.html">Platform</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="key-feature.html">Key features</a>
+                            <a class="nav-link menu_2" href="key-feature.html">Key features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            <a class="nav-link menu_3 active" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <div class="language-dropdown">
+                                <!-- Default flag and text -->
+                                <button class="dropbtn" id="languageButton">
+                                    <img src="assets/flag/gb.svg" alt="English Flag" id="currentFlag"> Eng (US)
+                                </button>
+                                <div class="dropdown-content" id="languageDropdown">
+                                    <a href="#" onclick="changeLanguage('en', 'Eng (US)', 'assets/flag/gb.svg')">
+                                        <img src="assets/flag/gb.svg" alt="English Flag"> Eng (US)
+                                    </a>
+                                    <a href="#" onclick="changeLanguage('es', 'Español', 'assets/flag/es.svg')">
+                                        <img src="assets/flag/es.svg" alt="Spanish Flag"> Español
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -319,12 +335,12 @@
             <div class="row gx-5 gy-3">
                 <div class="col-xl-6">
                     <div class="d-flex footer-menu-wrap">
-                        <a href="privacy-policies.html" class="footer-text me-2 me-md-5">privacy policies</a>
-                        <a href="terms-conditions.html" class="footer-text">Terms & Conditions</a>
+                        <a href="privacy-policies.html" class="footer-text footer-menu-1 me-2 me-md-5">privacy policies</a>
+                        <a href="terms-conditions.html" class="footer-text footer-menu-2">Terms & Conditions</a>
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <p class="footer-text">Copyright © 2024. All rights reserved</p>
+                    <p class="footer-text copyright-text">Copyright © 2024. All rights reserved</p>
                 </div>
             </div>
         </div>
