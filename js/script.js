@@ -17,8 +17,12 @@ const specificRender=()=>{
     if(dataPage === 'home'){
       homeRender();
     }
-    else if(dataPage === 'platform'){}
-    else if(dataPage === 'key-feature'){}
+    else if(dataPage === 'platform'){
+      platformRender();
+    }
+    else if(dataPage === 'key-feature'){
+      keyFeatureRender();
+    }
     else if(dataPage === 'contact'){}
     else if(dataPage === 'terms-conditions'){}
     else if(dataPage === 'privacy'){}
@@ -142,137 +146,231 @@ const homeRender=()=>{
   document.querySelector('.talk-desc').textContent = contentData?.contact_us?.sub_title || '';
   document.querySelector('.home-contact-btn').textContent = contentData?.contact_us?.button?.title || '';
   const hoverLayer1 = document.querySelector('.hover-layer-1');
+  const hoverLayer2 = document.querySelector('.hover-layer-2');
+  const hoverLayer3 = document.querySelector('.hover-layer-3');
+  const hoverLayer4 = document.querySelector('.hover-layer-4');
+  const hoverLayer5 = document.querySelector('.hover-layer-5');
   if(localStorage.getItem('selectedLanguage') === 'es'){
     if (hoverLayer1) {
       hoverLayer1.src = './assets/image/hover-layer-1-es.png';
     }
-    const hoverLayer2 = document.querySelector('.hover-layer-2');
     if (hoverLayer2) {
       hoverLayer2.src = './assets/image/hover-layer-2-es.png';
     }
-    const hoverLayer3 = document.querySelector('.hover-layer-3');
     if (hoverLayer3) {
       hoverLayer3.src = './assets/image/hover-layer-3-es.png';
     }
-    const hoverLayer4 = document.querySelector('.hover-layer-4');
+
     if (hoverLayer4) {
       hoverLayer4.src = './assets/image/hover-layer-4-es.png';
     }
-    const hoverLayer5 = document.querySelector('.hover-layer-5');
     if (hoverLayer5) {
       hoverLayer5.src = './assets/image/hover-layer-5-es.png';
+    }
+  } else{
+    if (hoverLayer1) {
+      hoverLayer1.src = './assets/image/hover-layer-1.png';
+    }
+    if (hoverLayer2) {
+      hoverLayer2.src = './assets/image/hover-layer-2.png';
+    }
+    if (hoverLayer3) {
+      hoverLayer3.src = './assets/image/hover-layer-3.png';
+    }
+    if (hoverLayer4) {
+      hoverLayer4.src = './assets/image/hover-layer-4.png';
+    }
+    if (hoverLayer5) {
+      hoverLayer5.src = './assets/image/hover-layer-5.png';
     }
   }
 
 
 }
 
+const platformRender=()=>{
+  document.querySelector('.platform-page-title').textContent = contentData?.platform?.button?.after_click?.main_title || '';
+    document.querySelector('.platform-page-subtitle').textContent = contentData?.platform?.button?.after_click?.sub_title || '';
+    document.querySelector('.platform-single-title-1').textContent = contentData?.platform?.button?.after_click?.feature_4?.title || '';
+    document.querySelector('.platform-single-title-2').textContent = contentData?.platform?.button?.after_click?.feature_5?.title || '';
+    document.querySelector('.platform-single-title-3').textContent = contentData?.platform?.button?.after_click?.feature_6?.title || '';
+    document.querySelector('.platform-single-desc-1').textContent = contentData?.platform?.button?.after_click?.feature_4?.description || '';
+    document.querySelector('.platform-single-desc-2').textContent = contentData?.platform?.button?.after_click?.feature_5?.description || '';
+    document.querySelector('.platform-single-desc-3').textContent = contentData?.platform?.button?.after_click?.feature_6?.description || '';
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Get the parent div
-  var parentDiv = document.querySelector('.core-image-inner-block-wrapper');
+}
 
-  // Loop to create 100 children divs
-  for (var i = 0; i < 112; i++) {
-    // Create a new div
-    var childDiv = document.createElement('div');
+const keyFeatureRender=()=>{
+  document.querySelector('.key-page-title').textContent = contentData?.key_feature?.button?.after_click?.main_title || '';
+  document.querySelector('.key-page-subtitle').textContent = contentData?.key_feature?.button?.after_click?.sub_title || '';
+    document.querySelector('.feature-text-1').textContent = contentData?.key_feature?.button?.after_click?.feature_1?.description || '';
+    document.querySelector('.feature-text-2').textContent = contentData?.key_feature?.button?.after_click?.feature_2?.description || '';
+    document.querySelector('.feature-text-3').textContent = contentData?.key_feature?.button?.after_click?.feature_3?.description || '';
+    document.querySelector('.feature-text-4').textContent = contentData?.key_feature?.button?.after_click?.feature_4?.description || '';
+    document.querySelector('.feature-text-5').textContent = contentData?.key_feature?.button?.after_click?.feature_5?.description || '';
+  const featureImg1 = document.querySelector('.feature-img-1');
+  const featureImg2 = document.querySelector('.feature-img-2');
+  const featureImg3 = document.querySelector('.feature-img-3');
+  const featureImg4 = document.querySelector('.feature-img-4');
+  const featureImg5 = document.querySelector('.feature-img-5');
+  if(localStorage.getItem('selectedLanguage') === 'es'){
+    if (featureImg1) {
+      featureImg1.src = './assets/image/digital-foot-es.png';
+    }
+    if (featureImg2) {
+      featureImg2.src = './assets/image/face-rec-es.png';
+    }
+    if (featureImg3) {
+      featureImg3.src = './assets/image/link-ana-es.png';
+    }
+    if (featureImg4) {
+      featureImg4.src = './assets/image/dark-net-es.png';
+    }
+    if (featureImg5) {
+      featureImg5.src = './assets/image/big-data-es.png';
+    }
+    if(document.querySelector('.key-page-col').classList.contains('col-xxl-9')){
+        document.querySelector('.key-page-col').classList.remove('col-xxl-9');
+        document.querySelector('.key-page-col').classList.add('col-xxl-10');
+    }
+  }else{
+    if (featureImg1) {
+      featureImg1.src = './assets/image/digital-foot.png';
+    }
+    if (featureImg2) {
+      featureImg2.src = './assets/image/face-rec.png';
+    }
+    if (featureImg3) {
+      featureImg3.src = './assets/image/link-ana.png';
+    }
+    if (featureImg4) {
+      featureImg4.src = './assets/image/dark-net.png';
+    }
+    if (featureImg5) {
+      featureImg5.src = './assets/image/big-data.png';
+    }
 
-    // Add the class to the new div
-    childDiv.className = 'core-image-inner-block';
-
-    // Append the new div to the parent div
-    if(parentDiv){
-      parentDiv.appendChild(childDiv);
+    if(document.querySelector('.key-page-col').classList.contains('col-xxl-10')){
+      document.querySelector('.key-page-col').classList.remove('col-xxl-10');
+      document.querySelector('.key-page-col').classList.add('col-xxl-9');
     }
   }
 
-  // Get the hover-layer-2 element
-  var hoverLayer1 = document.querySelector('.hover-layer-1');
-  var hoverLayer2 = document.querySelector('.hover-layer-2');
-  var hoverLayer3 = document.querySelector('.hover-layer-3');
-  var hoverLayer4 = document.querySelector('.hover-layer-4');
-  var hoverLayer5 = document.querySelector('.hover-layer-5');
-
-  // Get the core-image-inner-block elements
-  var blocks = document.querySelectorAll('.core-image-inner-block');
+}
 
 
-  // Layer 1 hover effect
-  for (var i = 1; i < 8; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer1.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer1.style.opacity = '0';
-    });
-  }
+const contactRender=()=>{}
+const termsConditionsRender=()=>{}
+const privacyRender=()=>{}
 
-  for (var i = 16; i < 24; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer1.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer1.style.opacity = '0';
-    });
-  }
-  for (var i = 32; i < 37; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer1.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer1.style.opacity = '0';
-    });
-  }
-  for (var i = 48; i < 51; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer1.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer1.style.opacity = '0';
-    });
-  }
 
-  // Layer 2 hover effect
-  for (var i = 8; i < 16; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer2.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer2.style.opacity = '0';
-    });
-  }
-  for (var i = 24; i < 32; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer2.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer2.style.opacity = '0';
-    });
-  }
-  for (var i = 40; i < 45; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer2.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer2.style.opacity = '0';
-    });
-  }
-  for (var i = 56; i < 60; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer2.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer2.style.opacity = '0';
-    });
-  }
-  for (var i = 73; i < 75; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer2.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer2.style.opacity = '0';
-    });
-  }
+const dataPage = document.body.getAttribute('data-page');
+if(dataPage === 'home'){
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the parent div
+    var parentDiv = document.querySelector('.core-image-inner-block-wrapper');
+
+    // Loop to create 100 children divs
+    for (var i = 0; i < 112; i++) {
+      // Create a new div
+      var childDiv = document.createElement('div');
+
+      // Add the class to the new div
+      childDiv.className = 'core-image-inner-block';
+
+      // Append the new div to the parent div
+      if(parentDiv){
+        parentDiv.appendChild(childDiv);
+      }
+    }
+
+    // Get the hover-layer-2 element
+    var hoverLayer1 = document.querySelector('.hover-layer-1');
+    var hoverLayer2 = document.querySelector('.hover-layer-2');
+    var hoverLayer3 = document.querySelector('.hover-layer-3');
+    var hoverLayer4 = document.querySelector('.hover-layer-4');
+    var hoverLayer5 = document.querySelector('.hover-layer-5');
+
+    // Get the core-image-inner-block elements
+    var blocks = document.querySelectorAll('.core-image-inner-block');
+
+
+    // Layer 1 hover effect
+    for (var i = 1; i < 8; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer1.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer1.style.opacity = '0';
+      });
+    }
+
+    for (var i = 16; i < 24; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer1.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer1.style.opacity = '0';
+      });
+    }
+    for (var i = 32; i < 37; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer1.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer1.style.opacity = '0';
+      });
+    }
+    for (var i = 48; i < 51; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer1.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer1.style.opacity = '0';
+      });
+    }
+
+    // Layer 2 hover effect
+    for (var i = 8; i < 16; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer2.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer2.style.opacity = '0';
+      });
+    }
+    for (var i = 24; i < 32; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer2.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer2.style.opacity = '0';
+      });
+    }
+    for (var i = 40; i < 45; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer2.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer2.style.opacity = '0';
+      });
+    }
+    for (var i = 56; i < 60; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer2.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer2.style.opacity = '0';
+      });
+    }
+    for (var i = 73; i < 75; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer2.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer2.style.opacity = '0';
+      });
+    }
     blocks[90].addEventListener('mouseover', function() {
       hoverLayer2.style.opacity = '1';
     });
@@ -281,149 +379,152 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-  //Layer 3 hover effect
-  for (var i = 102; i < 107; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer3.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer3.style.opacity = '0';
-    });
-  }
+    //Layer 3 hover effect
+    for (var i = 102; i < 107; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer3.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer3.style.opacity = '0';
+      });
+    }
 
-  for (var i = 86; i < 90; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer3.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer3.style.opacity = '0';
-    });
-  }
+    for (var i = 86; i < 90; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer3.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer3.style.opacity = '0';
+      });
+    }
 
-  for (var i = 70; i < 73; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer3.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer3.style.opacity = '0';
-    });
-  }
+    for (var i = 70; i < 73; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer3.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer3.style.opacity = '0';
+      });
+    }
 
-  for (var i = 54; i < 56; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer3.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer3.style.opacity = '0';
-    });
-  }
+    for (var i = 54; i < 56; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer3.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer3.style.opacity = '0';
+      });
+    }
 
-  for (var i = 38; i < 40; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer3.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer3.style.opacity = '0';
-    });
-  }
+    for (var i = 38; i < 40; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer3.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer3.style.opacity = '0';
+      });
+    }
 
-  //Layer 4 hover effect
-  blocks[37].addEventListener('mouseover', function() {
-    hoverLayer4.style.opacity = '1';
-  });
-  blocks[37].addEventListener('mouseout', function() {
-    hoverLayer4.style.opacity = '0';
-  });
-  for (var i = 51; i < 54; i++) {
-    blocks[i].addEventListener('mouseover', function() {
+    //Layer 4 hover effect
+    blocks[37].addEventListener('mouseover', function() {
       hoverLayer4.style.opacity = '1';
     });
-    blocks[i].addEventListener('mouseout', function() {
+    blocks[37].addEventListener('mouseout', function() {
       hoverLayer4.style.opacity = '0';
     });
-  }
-  for (var i = 64; i < 70; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer4.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer4.style.opacity = '0';
-    });
-  }
-  for (var i = 64; i < 70; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer4.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer4.style.opacity = '0';
-    });
-  }
+    for (var i = 51; i < 54; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer4.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer4.style.opacity = '0';
+      });
+    }
+    for (var i = 64; i < 70; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer4.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer4.style.opacity = '0';
+      });
+    }
+    for (var i = 64; i < 70; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer4.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer4.style.opacity = '0';
+      });
+    }
 
-  for (var i = 80; i < 86; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer4.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer4.style.opacity = '0';
-    });
-  }
+    for (var i = 80; i < 86; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer4.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer4.style.opacity = '0';
+      });
+    }
 
-  for (var i = 96; i < 102; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer4.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer4.style.opacity = '0';
-    });
-  }
+    for (var i = 96; i < 102; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer4.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer4.style.opacity = '0';
+      });
+    }
 
     //Layer 5 hover effect
-  for (var i = 107; i < 112; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer5.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer5.style.opacity = '0';
-    });
-  }
+    for (var i = 107; i < 112; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer5.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer5.style.opacity = '0';
+      });
+    }
 
-  for (var i = 91; i < 96; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer5.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer5.style.opacity = '0';
-    });
-  }
+    for (var i = 91; i < 96; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer5.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer5.style.opacity = '0';
+      });
+    }
 
-  for (var i = 75; i < 80; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer5.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer5.style.opacity = '0';
-    });
-  }
+    for (var i = 75; i < 80; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer5.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer5.style.opacity = '0';
+      });
+    }
 
-  for (var i = 60; i < 64; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer5.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer5.style.opacity = '0';
-    });
-  }
+    for (var i = 60; i < 64; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer5.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer5.style.opacity = '0';
+      });
+    }
 
-  for (var i = 45; i < 48; i++) {
-    blocks[i].addEventListener('mouseover', function() {
-      hoverLayer5.style.opacity = '1';
-    });
-    blocks[i].addEventListener('mouseout', function() {
-      hoverLayer5.style.opacity = '0';
-    });
-  }
+    for (var i = 45; i < 48; i++) {
+      blocks[i].addEventListener('mouseover', function() {
+        hoverLayer5.style.opacity = '1';
+      });
+      blocks[i].addEventListener('mouseout', function() {
+        hoverLayer5.style.opacity = '0';
+      });
+    }
 
-});
+  });
+}
+
+
 
 
 function showResponseMessage(message , type= 'alert-success', parentDiv= 'responseAlert'){
