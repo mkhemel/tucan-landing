@@ -196,7 +196,16 @@
 
     .navbar-cs .navbar-brand img{
         height: 60px;
-        width: 209px;
+        width: 176px;
+    }
+
+    .navbar-cs .nav-item .nav-link{
+        margin-left: 0;
+    }
+
+    .dropbtn{
+        margin-left: 0;
+        margin-top: 10px;
     }
 
 }
@@ -302,7 +311,7 @@
     }
     .navbar-cs .navbar-brand img{
         height: 50px;
-        width: 174px;
+        width: 147px;
     }
     .section{
         padding: 40px 0;
@@ -411,6 +420,30 @@
     }
 
 
+}
+
+@media (min-width: 1200px) {
+    .navbar-cs > .container-fluid{
+        padding: 0 25px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-cs .nav-item .nav-link{
+        margin-left: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+
+
+    .dropbtn{
+        min-width: 160px;
+        justify-content: center;
+    }
 }
 
 

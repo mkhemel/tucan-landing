@@ -23,7 +23,9 @@ const specificRender=()=>{
     else if(dataPage === 'key-feature'){
       keyFeatureRender();
     }
-    else if(dataPage === 'contact'){}
+    else if(dataPage === 'contact'){
+      contactRender();
+    }
     else if(dataPage === 'terms-conditions'){}
     else if(dataPage === 'privacy'){}
 }
@@ -259,7 +261,25 @@ const keyFeatureRender=()=>{
 }
 
 
-const contactRender=()=>{}
+const contactRender=()=>{
+    document.querySelector('.contact-page-title').textContent = contentData?.contact_us?.main_title || '';
+    document.querySelector('.contact-page-subtitle').textContent = contentData?.contact_us?.sub_title || '';
+    console.log(document.querySelector('#contactForm input[name="first_name"]'))
+    document.querySelector('#contactForm input[name="first_name"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_1 || 'First Name';
+    document.querySelector('#contactForm input[name="last_name"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_2 || 'Last Name';
+    document.querySelector('#contactForm input[name="email"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_3 || 'Email';
+    document.querySelector('#contactForm input[name="phone_number"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_4 || 'Phone Number';
+    document.querySelector('#contactForm input[name="organization"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_5 || 'Organization';
+    document.querySelector('#contactForm input[name="title"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_6 || 'Title';
+    const countrySelect = document.querySelector('#contactForm select[name="country"]');
+    if (countrySelect && countrySelect.options.length > 0) {
+        countrySelect.options[0].textContent = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_7.toUpperCase() || 'Select Country'.toUpperCase();
+    }
+  document.querySelector('#contactForm input[name="organization_website"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_8 || 'Organization website';
+  document.querySelector('#contactForm textarea[name="message"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_9 || 'write Your message';
+  document.querySelector('.agree-label').textContent = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.checkbox_text || 'i consent to tucan’s privacy policies, including marketing communications via email and telephone';
+  document.querySelector('.contact-form-btn').textContent = contentData?.contact_us?.button?.title || 'Submit';
+}
 const termsConditionsRender=()=>{}
 const privacyRender=()=>{}
 
