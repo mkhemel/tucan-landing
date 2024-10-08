@@ -26,13 +26,29 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-custom">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="platform.html">Platform</a>
+                            <a class="nav-link menu_1" aria-current="page" href="platform.html">Platform</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="key-feature.html">Key features</a>
+                            <a class="nav-link menu_2" href="key-feature.html">Key features</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        <li class="nav-item ">
+                            <a class="nav-link menu_3" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <div class="language-dropdown">
+                                <!-- Default flag and text -->
+                                <button class="dropbtn" id="languageButton">
+                                    <img src="assets/flag/gb.svg" alt="English Flag" id="currentFlag"> Eng (US)
+                                </button>
+                                <div class="dropdown-content" id="languageDropdown">
+                                    <a href="#" onclick="changeLanguage('en', 'Eng (US)', 'assets/flag/gb.svg')">
+                                        <img src="assets/flag/gb.svg" alt="English Flag"> Eng (US)
+                                    </a>
+                                    <a href="#" onclick="changeLanguage('es', 'Español', 'assets/flag/es.svg')">
+                                        <img src="assets/flag/es.svg" alt="Spanish Flag"> Español
+                                    </a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -63,43 +79,44 @@
     <div class="container container-wrap">
         <div class="row justify-content-center">
             <div class="col-xxl-9 col-lg-12">
-                <h1 class="welcome-card-title text-center mb-4">
+                <h1 class="welcome-card-title terms-page-title text-center mb-4">
                     Terms and Conditions
                 </h1>
+                <div class="Terms-container-wrap"></div>
 
-                <h1 class="privacy-access-title">Introduction</h1>
-                <p class="home-access-text">Welcome to TUCAN. These Terms and Conditions govern your use of our website. By accessing or using our website, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, you should not use our website.</p>
+<!--                <h1 class="privacy-access-title">Introduction</h1>-->
+<!--                <p class="home-access-text">Welcome to TUCAN. These Terms and Conditions govern your use of our website. By accessing or using our website, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, you should not use our website.</p>-->
 
-                <h1 class="privacy-access-title">Use of Website</h1>
-               <ul class="home-access-text privacy-ul">
-                    <li><span style="font-weight: 800;">Eligibility:</span> You must be at least 18 years of age to use our website. By using our website, you represent and warrant that you meet this requirement.</li>
-                    <li><span style="font-weight: 800;">Prohibited Conduct:</span> You agree not to use our website for any unlawful purpose or in any way that could harm, disable, overburden, or impair the website.</li>
-                </ul>
-                <h1 class="privacy-access-title">Content</h1>
-                <ul class="home-access-text privacy-ul">
-                    <li><span style="font-weight: 800;">User Content:</span>  You retain ownership of any content you submit through our website. By submitting content, you grant us a worldwide, non-exclusive, royalty-free license to use your content.</li>
-                    <li><span style="font-weight: 800;">Prohibited Content:</span> You agree not to submit any content that is offensive, defamatory, obscene, or otherwise objectionable.</li>
-                </ul>
-                <h1 class="privacy-access-title">Privacy Policy</h1>
-                <p class="home-access-text">Your use of our website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your information.</p>
-                <h1 class="privacy-access-title">Intellectual Property</h1>
-                <p class="home-access-text">All content on our website, including text, graphics, logos, and software, is the property of TUCAN or its content suppliers and is protected by intellectual property laws. You may not use any content from our website without our prior written permission.</p>
+<!--                <h1 class="privacy-access-title">Use of Website</h1>-->
+<!--               <ul class="home-access-text privacy-ul">-->
+<!--                    <li><span style="font-weight: 800;">Eligibility:</span> You must be at least 18 years of age to use our website. By using our website, you represent and warrant that you meet this requirement.</li>-->
+<!--                    <li><span style="font-weight: 800;">Prohibited Conduct:</span> You agree not to use our website for any unlawful purpose or in any way that could harm, disable, overburden, or impair the website.</li>-->
+<!--                </ul>-->
+<!--                <h1 class="privacy-access-title">Content</h1>-->
+<!--                <ul class="home-access-text privacy-ul">-->
+<!--                    <li><span style="font-weight: 800;">User Content:</span>  You retain ownership of any content you submit through our website. By submitting content, you grant us a worldwide, non-exclusive, royalty-free license to use your content.</li>-->
+<!--                    <li><span style="font-weight: 800;">Prohibited Content:</span> You agree not to submit any content that is offensive, defamatory, obscene, or otherwise objectionable.</li>-->
+<!--                </ul>-->
+<!--                <h1 class="privacy-access-title">Privacy Policy</h1>-->
+<!--                <p class="home-access-text">Your use of our website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your information.</p>-->
+<!--                <h1 class="privacy-access-title">Intellectual Property</h1>-->
+<!--                <p class="home-access-text">All content on our website, including text, graphics, logos, and software, is the property of TUCAN or its content suppliers and is protected by intellectual property laws. You may not use any content from our website without our prior written permission.</p>-->
 
-                <h1 class="privacy-access-title">Disclaimer of Warranties</h1>
-                <p class="home-access-text">Our website is provided "as is" and "as available" without any warranties of any kind, either express or implied. We do not warrant that our website will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+<!--                <h1 class="privacy-access-title">Disclaimer of Warranties</h1>-->
+<!--                <p class="home-access-text">Our website is provided "as is" and "as available" without any warranties of any kind, either express or implied. We do not warrant that our website will be uninterrupted, error-free, or free of viruses or other harmful components.</p>-->
 
-                <h1 class="privacy-access-title">Limitation of Liability</h1>
-                <p class="home-access-text">To the fullest extent permitted by law, TUCAN shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of our website.</p>
+<!--                <h1 class="privacy-access-title">Limitation of Liability</h1>-->
+<!--                <p class="home-access-text">To the fullest extent permitted by law, TUCAN shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of our website.</p>-->
 
-                <h1 class="privacy-access-title">Indemnification</h1>
-                <p class="home-access-text">You agree to indemnify and hold TUCAN harmless from any claims, damages, losses, liabilities, and expenses arising out of your use of our website or your violation of these Terms and Conditions.</p>
+<!--                <h1 class="privacy-access-title">Indemnification</h1>-->
+<!--                <p class="home-access-text">You agree to indemnify and hold TUCAN harmless from any claims, damages, losses, liabilities, and expenses arising out of your use of our website or your violation of these Terms and Conditions.</p>-->
 
-                <h1 class="privacy-access-title">Changes to Terms and Conditions</h1>
-                <p class="home-access-text">We may update these Terms and Conditions from time to time. Any changes will be posted on this page, and your continued use of our website after such changes constitutes your acceptance of the new terms.</p>
+<!--                <h1 class="privacy-access-title">Changes to Terms and Conditions</h1>-->
+<!--                <p class="home-access-text">We may update these Terms and Conditions from time to time. Any changes will be posted on this page, and your continued use of our website after such changes constitutes your acceptance of the new terms.</p>-->
 
 
-                <h1 class="privacy-access-title">Contact Us</h1>
-                <p class="home-access-text mb-5">If you have any questions or concerns about our Privacy Policy, please contact us at info@2can.online.</p>
+<!--                <h1 class="privacy-access-title">Contact Us</h1>-->
+<!--                <p class="home-access-text mb-5">If you have any questions or concerns about our Privacy Policy, please contact us at info@2can.online.</p>-->
 
             </div>
         </div>
@@ -108,12 +125,12 @@
             <div class="row gx-5 gy-3">
                 <div class="col-xl-6">
                     <div class="d-flex footer-menu-wrap">
-                        <a href="privacy-policies.html" class="footer-text me-2 me-md-5">privacy policies</a>
-                        <a href="terms-conditions.html" class="footer-text">Terms & Conditions</a>
+                        <a href="privacy-policies.html" class="footer-text footer-menu-1 me-2 me-md-5">privacy policies</a>
+                        <a href="terms-conditions.html" class="footer-text footer-menu-2">Terms & Conditions</a>
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <p class="footer-text">Copyright © 2024. All rights reserved</p>
+                    <p class="footer-text copyright-text">Copyright © 2024. All rights reserved</p>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 let contentData;
 
 const commonRender=()=>{
-  console.log(document.querySelector('.menu_1').textContent, contentData?.footer?.section_1?.title);
+  // console.log(document.querySelector('.menu_1').textContent, contentData?.footer?.section_1?.title);
   document.querySelector('.menu_1').textContent = contentData?.menu?.menu_1?.text;
   document.querySelector('.menu_2').textContent = contentData?.menu?.menu_2?.text;
   document.querySelector('.menu_3').textContent = contentData?.menu?.menu_3?.text;
@@ -26,8 +26,12 @@ const specificRender=()=>{
     else if(dataPage === 'contact'){
       contactRender();
     }
-    else if(dataPage === 'terms-conditions'){}
-    else if(dataPage === 'privacy'){}
+    else if(dataPage === 'terms-conditions'){
+      termsConditionsRender();
+    }
+    else if(dataPage === 'privacy'){
+        privacyRender();
+    }
 }
 
 
@@ -51,7 +55,7 @@ function changeLanguage(languageCode, languageName, flagPath) {
     // Change the button text and flag
     languageButton.innerHTML = `<img src="${flagPath}" alt="${languageName} Flag" id="currentFlag"> ${languageName}`;
 
-    console.log("Selected Language: " + languageCode);
+    // console.log("Selected Language: " + languageCode);
 
     localStorage.setItem('selectedLanguage', languageCode);
     localStorage.setItem('selectedLanguageName', languageName);
@@ -94,7 +98,7 @@ const homeRender=()=>{
    document.querySelector('#demo-request input[name="organization"]').placeholder = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_5 || 'organization';
   const countrySelect = document.querySelector('#demo-request select[name="country"]');
   if (countrySelect && countrySelect.options.length > 0) {
-    console.log('countrySelect.options[0]', countrySelect.options[0])
+    // console.log('countrySelect.options[0]', countrySelect.options[0])
     countrySelect.options[0].textContent = contentData?.main_theme?.button?.after_click?.placeholder_text_in_form?.input_6.toUpperCase() || 'Select Country'.toUpperCase();
   }
   document.querySelectorAll('.agree-label').forEach((element)=>{
@@ -265,7 +269,7 @@ const keyFeatureRender=()=>{
 const contactRender=()=>{
     document.querySelector('.contact-page-title').textContent = contentData?.contact_us?.main_title || '';
     document.querySelector('.contact-page-subtitle').textContent = contentData?.contact_us?.sub_title || '';
-    console.log(document.querySelector('#contactForm input[name="first_name"]'))
+    // console.log(document.querySelector('#contactForm input[name="first_name"]'))
     document.querySelector('#contactForm input[name="first_name"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_1 || 'First Name';
     document.querySelector('#contactForm input[name="last_name"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_2 || 'Last Name';
     document.querySelector('#contactForm input[name="email"]').placeholder = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.input_3 || 'Email';
@@ -281,8 +285,112 @@ const contactRender=()=>{
   document.querySelector('.agree-label').textContent = contentData?.contact_us?.button?.after_click?.placeholder_text_in_form?.checkbox_text || 'i consent to tucan’s privacy policies, including marketing communications via email and telephone';
   document.querySelector('.contact-form-btn').textContent = contentData?.contact_us?.button?.title || 'Submit';
 }
-const termsConditionsRender=()=>{}
-const privacyRender=()=>{}
+const termsConditionsRender=()=>{
+  document.querySelector('.terms-page-title').textContent = contentData?.footer?.section_2?.after_click?.main_title || '';
+  const termsContainer = document.querySelector('.Terms-container-wrap');
+  termsContainer.innerHTML = '';
+  if(contentData?.footer?.section_2?.after_click){
+    const contentArray = Object.keys(contentData?.footer?.section_2?.after_click)
+        .filter(key => key.startsWith('content_')) // Filter keys that start with 'content_'
+        .map(key => contentData?.footer?.section_2?.after_click[key]); // Map them to their corresponding values
+
+    // console.log(contentArray);
+    contentArray.forEach(content => {
+      // Create and set the title
+      const ulElement = document.createElement('ul');
+      const titleElement = document.createElement('h1');
+      titleElement.classList.add('privacy-access-title');
+      if(content.title){
+        titleElement.textContent = content.title;
+      }
+
+      // Create and set the description
+      const descriptionElement = document.createElement('p');
+      descriptionElement.classList.add('home-access-text');
+      if (typeof content.description == 'string') {
+        descriptionElement.textContent = content.description;
+      }else{
+        if(content.description.text || content.description.title){
+          // console.log('content.description.text', content.description.text);
+            descriptionElement.textContent = content.description.text || content.description.title;
+        }
+        if (typeof content.description === 'object') {
+          ulElement.classList.add('home-access-text', 'privacy-ul');
+          for (const key in content.description) {
+            if (content.description.hasOwnProperty(key) && key.startsWith('ul_')) {
+              const liElement = document.createElement('li');
+              liElement.textContent = content.description[key];
+              ulElement.appendChild(liElement);
+            }
+          }
+        }
+
+      }
+
+      termsContainer.appendChild(titleElement);
+      termsContainer.appendChild(descriptionElement);
+      if (ulElement.hasChildNodes()) {
+        termsContainer.appendChild(ulElement);
+      }
+
+    });
+  }
+
+
+
+}
+const privacyRender=()=>{
+  document.querySelector('.privacy-page-title').textContent = contentData?.footer?.section_1?.after_click?.main_title || '';
+  const privacyContainer = document.querySelector('.privacy-container-wrap');
+  privacyContainer.innerHTML = '';
+  if(contentData?.footer?.section_2?.after_click){
+    const contentArray = Object.keys(contentData?.footer?.section_1?.after_click)
+        .filter(key => key.startsWith('content_')) // Filter keys that start with 'content_'
+        .map(key => contentData?.footer?.section_1?.after_click[key]); // Map them to their corresponding values
+
+    // console.log(contentArray);
+    contentArray.forEach(content => {
+      // Create and set the title
+      const ulElement = document.createElement('ul');
+      const titleElement = document.createElement('h1');
+      titleElement.classList.add('privacy-access-title');
+      if(content.title){
+        titleElement.textContent = content.title;
+      }
+
+      // Create and set the description
+      const descriptionElement = document.createElement('p');
+      descriptionElement.classList.add('home-access-text');
+      if (typeof content.description == 'string') {
+        descriptionElement.textContent = content.description;
+      }else{
+        if(content.description.text || content.description.title){
+          // console.log('content.description.text', content.description.text);
+          descriptionElement.textContent = content.description.text || content.description.title;
+        }
+        if (typeof content.description === 'object') {
+          ulElement.classList.add('home-access-text', 'privacy-ul');
+          for (const key in content.description) {
+            if (content.description.hasOwnProperty(key) && key.startsWith('ul_')) {
+              const liElement = document.createElement('li');
+              liElement.textContent = content.description[key];
+              ulElement.appendChild(liElement);
+            }
+          }
+        }
+
+      }
+
+      privacyContainer.appendChild(titleElement);
+      privacyContainer.appendChild(descriptionElement);
+      if (ulElement.hasChildNodes()) {
+        privacyContainer.appendChild(ulElement);
+      }
+
+    });
+  }
+
+}
 
 
 const dataPage = document.body.getAttribute('data-page');
