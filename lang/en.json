@@ -138,7 +138,7 @@
             }
         }
     },
-    "key-feature": {
+    "key_feature": {
         "title": "core components",
         "button": {
             "title": "learn more",

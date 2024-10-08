@@ -138,7 +138,7 @@
             }
         }
     },
-    "Características principales": {
+    "key_feature": {
         "title": "componentes principales",
         "button": {
             "title": "Más información",

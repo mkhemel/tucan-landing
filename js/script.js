@@ -109,11 +109,61 @@ const homeRender=()=>{
 
     document.querySelector('.platform-1-title').textContent = contentData?.platform?.feature_1?.title || '';
     document.querySelector('.platform-1-desc').textContent = contentData?.platform?.feature_1?.description || '';
-    document.querySelector('.platform-2-title').textContent = contentData?.platform?.feature_1?.title || '';
-    document.querySelector('.platform-2-desc').textContent = contentData?.platform?.feature_1?.description || '';
-    document.querySelector('.platform-3-title').textContent = contentData?.platform?.feature_1?.title || '';
-    document.querySelector('.platform-3-desc').textContent = contentData?.platform?.feature_1?.description || '';
+    document.querySelector('.platform-2-title').textContent = contentData?.platform?.feature_2?.title || '';
+    document.querySelector('.platform-2-desc').textContent = contentData?.platform?.feature_2?.description || '';
+    document.querySelector('.platform-3-title').textContent = contentData?.platform?.feature_3?.title || '';
+    document.querySelector('.platform-3-desc').textContent = contentData?.platform?.feature_3?.description || '';
     document.querySelector('.home-platform-btn').textContent = contentData?.platform?.button?.title || '';
+    document.querySelector('.core-component-title').textContent = contentData?.key_feature?.title ||'';
+    document.querySelector('.key-feature-btn').textContent= contentData?.key_feature?.button?.title || '';
+    document.querySelector('.short-mv-subtitle-1').textContent = contentData?.video?.short_title || '';
+    document.querySelector('.short-mv-title').textContent = contentData?.video?.main_title || '';
+    document.querySelector('.short-mv-desc').textContent = contentData?.video?.sub_title || '';
+    document.querySelector('.registerModalBtn').textContent = contentData?.video?.button?.title || 'Register';
+
+  document.querySelector('.register-request-title').textContent = contentData?.video?.button?.after_click?.title || '';
+  document.querySelector('#register-request input[name="first_name"]').placeholder = contentData?.video?.button?.after_click?.placeholder_text_in_form?.input_1 || 'First Name';
+  document.querySelector('#register-request input[name="last_name"]').placeholder = contentData?.video?.button?.after_click?.placeholder_text_in_form?.input_2 || 'Last Name';
+  document.querySelector('#register-request input[name="email"]').placeholder = contentData?.video?.button?.after_click?.placeholder_text_in_form?.input_3 || 'Email';
+  document.querySelector('#register-request input[name="title"]').placeholder = contentData?.video?.button?.after_click?.placeholder_text_in_form?.input_4 || 'Title';
+  document.querySelector('#register-request input[name="organization"]').placeholder = contentData?.video?.button?.after_click?.placeholder_text_in_form?.input_5 || 'organization';
+  const countrySelect1 = document.querySelector('#register-request select[name="country"]');
+  if (countrySelect1 && countrySelect1.options.length > 0) {
+    countrySelect1.options[0].textContent = contentData?.video?.button?.after_click?.placeholder_text_in_form?.input_6.toUpperCase() || 'Select Country'.toUpperCase();
+  }
+  document.querySelector('.regSubmitBtn').textContent = contentData?.video?.button?.after_click?.submit_button_text || 'Submit';
+
+  document.querySelector('.demo-sec-subtitle').textContent = contentData?.experience?.short_title || '';
+  document.querySelector('.demo-sec-title').textContent = contentData?.experience?.main_title || '';
+  document.querySelector('.demo-sec-desc').textContent = contentData?.experience?.sub_title || '';
+  document.querySelector('.demoBookModalbtn').textContent = contentData?.experience?.button?.title || '';
+
+  document.querySelector('.talk-title').textContent = contentData?.contact_us?.main_title || '';
+  document.querySelector('.talk-desc').textContent = contentData?.contact_us?.sub_title || '';
+  document.querySelector('.home-contact-btn').textContent = contentData?.contact_us?.button?.title || '';
+  const hoverLayer1 = document.querySelector('.hover-layer-1');
+  if(localStorage.getItem('selectedLanguage') === 'es'){
+    if (hoverLayer1) {
+      hoverLayer1.src = './assets/image/hover-layer-1-es.png';
+    }
+    const hoverLayer2 = document.querySelector('.hover-layer-2');
+    if (hoverLayer2) {
+      hoverLayer2.src = './assets/image/hover-layer-2-es.png';
+    }
+    const hoverLayer3 = document.querySelector('.hover-layer-3');
+    if (hoverLayer3) {
+      hoverLayer3.src = './assets/image/hover-layer-3-es.png';
+    }
+    const hoverLayer4 = document.querySelector('.hover-layer-4');
+    if (hoverLayer4) {
+      hoverLayer4.src = './assets/image/hover-layer-4-es.png';
+    }
+    const hoverLayer5 = document.querySelector('.hover-layer-5');
+    if (hoverLayer5) {
+      hoverLayer5.src = './assets/image/hover-layer-5-es.png';
+    }
+  }
+
 
 }
 
