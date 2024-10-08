@@ -146,6 +146,7 @@ const homeRender=()=>{
 
   document.querySelector('.talk-title').textContent = contentData?.contact_us?.main_title || '';
   document.querySelector('.talk-desc').textContent = contentData?.contact_us?.sub_title || '';
+  document.querySelector('.home-footer-main-text').textContent = contentData?.contact_us?.bg_text || '';
   document.querySelector('.home-contact-btn').textContent = contentData?.contact_us?.button?.title || '';
   const hoverLayer1 = document.querySelector('.hover-layer-1');
   const hoverLayer2 = document.querySelector('.hover-layer-2');

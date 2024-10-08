@@ -216,6 +216,7 @@
     "contact_us": {
         "main_title": "Let’s talk",
         "sub_title": "REACH OUT TO US TODAY TO EXPLORE THE BENEFITS OF TUCAN",
+        "bg_text": "Let's work together. we can support your security goals",
         "button": {
             "title": "contact us",
             "after_click": {

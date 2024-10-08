@@ -216,6 +216,7 @@
     "contact_us": {
         "main_title": "Hablemos",
         "sub_title": "CONTÁCTENOS HOY PARA EXPLORAR LOS BENEFICIOS DE TUCAN",
+        "bg_text": "Trabajemos juntos. Lo apoyamos a cumplir sus objetivos de seguridad",
         "button": {
             "title": "Contáctenos",
             "after_click": {
